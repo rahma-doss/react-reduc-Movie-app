@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
+// import Search from './component/Search'
+import Filtre from './component/Filtre'
+import MovieList from './component/MovieList'
+// import AddMovie from './component/AddMovie'
+import ModalComponent from './component/ModalComponent'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class  App extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+      
+    };
+  }
+  render() {
+    return (
+      <div className="App">
+        <Filtre/>
+        <MovieList/>
+        {/* <AddMovie /> */}
+        <ModalComponent editMode={false} />
+      </div>
+    );
+  }
+  
 }
 
 export default App;

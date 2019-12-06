@@ -1,0 +1,11 @@
+.Movielist{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.MovieCard{
+    width: 30%;
+}
+.MovieCard img {
+    width: 50%;
+}
